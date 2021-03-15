@@ -1,0 +1,33 @@
+{
+  "produtos" : [ {
+    "id" : "1",
+    "name" : "Ração"
+  }, {
+    "id" : "2",
+    "name" : "Tapete"
+  }, {
+    "id" : "3",
+    "name" : "Coleira"
+  }, {
+    "id" : "4",
+    "name" : "Peixe"
+  }, {
+    "id" : "5",
+    "name" : "Aquário"
+  }, {
+    "id" : "6",
+    "name" : "Gaiola"
+  }, {
+    "id" : "7",
+    "name" : "Arranhador"
+  }, {
+    "id" : "8",
+    "name" : "Transporte"
+  }, {
+    "id" : "9",
+    "name" : "Tartaruga"
+  }, {
+    "id" : "10",
+    "name" : "Fralda"
+  } ]
+}

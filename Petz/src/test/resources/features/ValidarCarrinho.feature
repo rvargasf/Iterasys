@@ -14,3 +14,13 @@ Funcionalidade: Validar inclusão de produto no carrinho
     Então sistema exibe dados do produto selecionado
     Quando adiciono o produto ao carrinho de compras
     Então dados do produto são exibidos em conformidade
+
+  Esquema do Cenário: Adicionar produto ao carrinho com massa de dados
+    Quando eu consulto o <produto>
+    E seleciono o terceiro item na lista
+    Então sistema exibe dados do produto selecionado
+    Quando adiciono o produto ao carrinho de compras
+    Então dados do produto são exibidos em conformidade
+
+    Exemplos: 
+      | id | produto |
