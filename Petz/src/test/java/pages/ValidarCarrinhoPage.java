@@ -2,6 +2,13 @@ package pages;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.junit.Test;
 import org.openqa.selenium.By;
 
 import common.BasePage;
@@ -68,4 +75,27 @@ public class ValidarCarrinhoPage extends BasePage {
 		// assertThat(nomeProduto).isEqualTo(produto);
 
 	}
+
+	/*
+	 * @DataProvider(name="dp") readJson() { JSONParser jsonParser = new
+	 * JSONParser(); FileReader reader = new
+	 * FileReader(".\\CarrinhoMassaTeste.json");
+	 * 
+	 * Object obj = jsonParser.parse(reader);
+	 * 
+	 * JsonObject produtosObj = (JsonObject) obj; //JSONArray arr = (JSONArray)
+	 * produtosObj.get("produtos");
+	 */
+
+	@Test
+	public void LerJson() throws IOException, ParseException {
+		JSONParser jsonParser = new JSONParser();
+		FileReader reader = new FileReader("../CarrinhoMassaTeste.json");
+		// Read JSON file
+		Object obj = jsonParser.parse(reader);
+
+		JSONArray usersList = (JSONArray) obj;
+		System.out.println(usersList); // This prints the entire json file
+	}
+
 }
